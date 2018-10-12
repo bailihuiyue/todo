@@ -5,10 +5,15 @@
   </div>
 </template>
 <script>
+import Notification from './components/notify/notify.vue'
+
 export default {
   name: "App",
   mounted() {
-    this.$notify();
+    // this.$notify();
+  },
+  components:{
+    Notification
   }
 };
 </script>
