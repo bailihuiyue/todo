@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { mapMutations, mapGetters } from "vuex";
+import { mapMutations, mapGetters, mapActions } from "vuex";
 import { setInterval } from "timers";
 
 export default {
@@ -32,7 +32,6 @@ export default {
     //   console.log(this.$store.state.count)
     // },1000)
 
-    
     this.updateCount({ num: 123 });
     console.log(this.$store.state.count);
   },
